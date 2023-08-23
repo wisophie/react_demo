@@ -30,7 +30,7 @@ class Home extends Component {
           <div className="testSubject">切换考试科目</div>
         </div>
         <div className="studyKu">
-          <p className="welcome">欢迎使用IT猿题库！</p>
+          <p className="welcome">欢迎来到ITIKU爱题库！</p>
           <div className="down">
             <img src={xiaolang} alt="" />
             <div className="right">

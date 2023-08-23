@@ -1,8 +1,9 @@
 //1、引入React两个核心模块
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'reset-css';
+// import 'reset-css';
 import 'lib-flexible';
+import './global.less'
 import BaseRouter from './router'
 import { Provider } from 'react-redux'
 import store from './store'

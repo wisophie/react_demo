@@ -1,11 +1,17 @@
 // @import url("http://at.alicdn.com/t/font_2390471_h1demfeh4rc.css");
 
-@bgcolor:#F8F8F8;
+@bgcolor: #F8F8F8;
 
-.body{
+.body {
   width: 100%;
-  height: 100;
+  height: 100%;
   background: @bgcolor;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  ::-webkit-scrollbar {
+    width: 17px;
+  }
 }
 
 #root {
@@ -13,9 +19,10 @@
   font-family: NotoSansHans;
   color: #333333;
 }
+
 // *{
 //   touch-action:none;
 // }
-a{
+a {
   text-decoration: none;
 }

@@ -1,7 +1,12 @@
 .body {
   width: 100%;
-  height: 100;
+  height: 100%;
   background: #F8F8F8;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.body ::-webkit-scrollbar {
+  width: 17px;
 }
 #root {
   font-size: 38px;

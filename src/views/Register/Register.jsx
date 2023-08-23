@@ -12,12 +12,18 @@ const useStyles = makeStyles((theme) => ({
   loginPage: {
     background: '#fff',
     height: '100vh',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    textAlign: 'center',
   },
   logo: {
     display: 'block',
     margin: '0 auto',
-    marginTop: '20vh'
+    marginTop: '18vh',
+    marginBottom: '1vh',
+  },
+  p: {
+    fontSize: '.5rem',
+    fontWeight: '600',
   },
   title: {
     fontSize: '.5rem',
@@ -100,6 +106,7 @@ function SignIn(props) {
   return (
     <div className={classes.loginPage}>
       <img src={logo} className={classes.logo} alt="" />
+      <p className={classes.p}>ITIKU爱题库</p>
       <h2 className={classes.title}>Register Page</h2>
       <form className={classes.root}>
         <TextField
@@ -135,12 +142,12 @@ function SignIn(props) {
           variant="contained"
           onClick={submitFn}
         >立即注册</Button>
-        <Link to="/login" variant="body2" style={{ color: '#02369d', marginTop: '20px' }}>返回登录</Link>
+        <Link to="/login" variant="body2" style={{ color: '#02369d', marginTop: '20px', textAlign: 'left', }}>返回登录</Link>
       </form>
       <section className={classes.copyright}>
         {'Copyright © '}
         <Link color="inherit" to="http://codesohigh.com">
-          你单排吧
+          Yanli
         </Link>{' '}
         {new Date().getFullYear()}
         {'.'}
